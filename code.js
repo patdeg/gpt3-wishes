@@ -26,7 +26,7 @@ function prompt(x,lang) {
   };
   
   // Call GPT-3 API
-  let response = UrlFetchApp.fetchWithExponentialBackoff(
+  let response = UrlFetchApp.fetch(
     'https://api.openai.com/v1/completions',
     {
       'method' : 'post',
