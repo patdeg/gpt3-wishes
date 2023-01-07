@@ -19,7 +19,7 @@ function prompt(x,lang) {
   
   // GPT-3 Comletion API Call data/payload:
   let data = {
-    'prompt': prompt,
+    'prompt': x,
     'max_tokens': NUM_TOKENS,
     'temperature': TEMPERATURE,
     'model': 'text-davinci-003',
